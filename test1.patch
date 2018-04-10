@@ -1,0 +1,14 @@
+Index: message_send.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- message_send.py	(date 1522703168000)
++++ message_send.py	(date 1522703168000)
+@@ -0,0 +1,5 @@
++import itchat
++
++itchat.auto_login()
++
++itchat.send("Hello, this is Masterqun, I'm ready to help!", toUserName="filehelper")
+\ No newline at end of file
