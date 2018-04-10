@@ -1,5 +1,5 @@
 import itchat, time, sys
-
+from itchat.content import TEXT
 def output_info(msg):
     print('[INFO] %s' % msg)
 
@@ -40,7 +40,7 @@ itchat.get_friends(True)
 
 output_info('Login successfully as %s'%userInfo['User']['NickName'])
 itchat.start_receiving()
-@itchat.msg_register
+@itchat.msg_register(TEXT)
 def simple_reply(msg):
     if msg['Type']=='Text':
         print('I received: %s'%msg.text)
