@@ -1,15 +1,15 @@
 import itchat
 from itchat.content import TEXT
-import pdb
+
 @itchat.msg_register(TEXT)
-def text_reply(msg):
+def Auto_reply(msg):
 
     verifycode = msg.text
-    print(verifycode)
+    print(msg['FromUserName'])
+    print(msg['CreateTime'])
+    print(msg['User']['NickName'])
+    print(msg)
 
-pdb.set_trace()
-itchat.auto_login()
-pdb.set_trace()
-itchat.start_receiving()
+itchat.auto_login(hotReload=True)
+itchat.run()
 
-pdb.set_trace()
