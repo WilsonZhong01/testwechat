@@ -1,0 +1,56 @@
+﻿{'Sex': 0, 
+'VerifyFlag': 0, 
+'RemarkName': '', 
+'AppAccountFlag': 0, 
+'KeyWord': '', 
+'EncryChatRoomId': '@c543705b414a91e1099370bbda1888e4',
+ 'PYQuanPin': 'womendetuandui', 
+'City': '', 
+'StarFriend': 0, 
+'OwnerUin': 0, 
+'RemarkPYQuanPin': '', 
+'ContactFlag': 3, 
+'HeadImgUrl': '/cgi-bin/mmwebwx-bin/webwxgetheadimg?seq=666390498&username=@@0b21ba74a024aae986ed7eca6fc973a8ad287d10a7bab072fd7f84bf3d0dc413&skey=', 
+'AttrStatus': 0, 
+'SnsFlag': 0, 
+
+'Self': <ChatroomMember: {'Sex': 1, 'VerifyFlag': 0, 'RemarkName': '', 'AppAccountFlag': 0, 'KeyWord': '', 'EncryChatRoomId': '@c543705b414a91e1099370bbda1888e4', 'HideInputBarFlag': 0, 'City': '', 'StarFriend': 0, 'RemarkPYQuanPin': '', 'ContactFlag': 0, 'AttrStatus': 38207749, 'PYQuanPin': 'Wilson', 'Statues': 0, 'NickName': 'Wilson', 'Uin': 0, 'OwnerUin': 0, 'ChatRoomId': 0, 'Signature': '每天都是新的开始。', 'IsOwner': 0, 'Alias': '', 'UserName': '@fa8fe8fdca294b74c594bcd25d1008b5cbb609876adcecab91dda43897215a71', 'SnsFlag': 1, 'Province': '', 'UniFriend': 0, 'RemarkPYInitial': '', 'HeadImgUrl': '/cgi-bin/mmwebwx-bin/webwxgeticon?seq=0&username=@fa8fe8fdca294b74c594bcd25d1008b5cbb609876adcecab91dda43897215a71&chatroomid=@c543705b414a91e1099370bbda1888e4&skey=', 'MemberCount': 0, 'DisplayName': '', 'PYInitial': 'WILSON', 'MemberList': <ContactList: []>}>, 
+
+'Statues': 1, 
+'HideInputBarFlag': 0, 
+'Uin': 0, 
+'IsAdmin': None, 
+'ChatRoomId': 0, 
+'NickName': '我们的团队', 
+'IsOwner': 1, 
+'Alias': '', 
+'UserName': '@@0b21ba74a024aae986ed7eca6fc973a8ad287d10a7bab072fd7f84bf3d0dc413', 
+'Province': '', 
+'UniFriend': 0, 
+'RemarkPYInitial': '', 
+'Signature': '', 
+'MemberCount': 3, 
+'DisplayName': '', 
+'PYInitial': 'WMDTD', 
+
+
+'MemberList': 
+<ContactList: [<ChatroomMember: {'Sex': 2, 'VerifyFlag': 0, 'RemarkName': '', 'AppAccountFlag': 0, 'KeyWord': '', 'EncryChatRoomId': '@c543705b414a91e1099370bbda1888e4', 'HideInputBarFlag': 0, 'City': '', 'StarFriend': 0, 'RemarkPYQuanPin': '', 'ContactFlag': 3, 'AttrStatus': 33787941, 'PYQuanPin': 'spanclassemojiemoji1f380spanCarozhengpinmeitongdaigou', 'Statues': 0, 'NickName': '🎀Caro正品美瞳代购', 'Uin': 0, 'OwnerUin': 0, 'ChatRoomId': 0, 'Signature': '美瞳正品代购。假的我吃', 'IsOwner': 0, 'Alias': '', 'UserName': '@47869b01e30b2eb23c88b6422ee4f811035f4e76540845dd1b9b7c8352e3f709', 'SnsFlag': 1, 'Province': 'London', 'UniFriend': 0, 'RemarkPYInitial': '', 'HeadImgUrl': '/cgi-bin/mmwebwx-bin/webwxgeticon?seq=666386380&username=@47869b01e30b2eb23c88b6422ee4f811035f4e76540845dd1b9b7c8352e3f709&skey=', 'MemberCount': 0, 'DisplayName': '', 'PYInitial': 'SPANCLASSEMOJIEMOJI1F380SPANCAROZPMTDG', 'MemberList': <ContactList: []>}>, 
+
+
+<ChatroomMember: {'Sex': 1, 'VerifyFlag': 0, 'RemarkName': '', 'AppAccountFlag': 0, 'KeyWord': '', 'EncryChatRoomId': '@c543705b414a91e1099370bbda1888e4', 'HideInputBarFlag': 0, 'City': '', 'StarFriend': 0, 'RemarkPYQuanPin': '', 'ContactFlag': 3, 'AttrStatus': 495653, 'PYQuanPin': '0821180410', 'Statues': 0, 'NickName': '0821180410', 'Uin': 0, 'OwnerUin': 0, 'ChatRoomId': 0, 'Signature': '5199140538', 'IsOwner': 0, 'Alias': '', 'UserName': '@56f5d8d2ec2b28afc4702ae87c91656239c7837d39fab544d9aced6e02fcc949', 'SnsFlag': 0, 'Province': '', 'UniFriend': 0, 'RemarkPYInitial': '', 'HeadImgUrl': '/cgi-bin/mmwebwx-bin/webwxgeticon?seq=666383784&username=@56f5d8d2ec2b28afc4702ae87c91656239c7837d39fab544d9aced6e02fcc949&skey=', 'MemberCount': 0, 'DisplayName': '', 'PYInitial': '0821180410', 'MemberList': <ContactList: []>}>, 
+
+
+<ChatroomMember: {'Sex': 1, 'VerifyFlag': 0, 'RemarkName': '', 'AppAccountFlag': 0, 'KeyWord': '', 'EncryChatRoomId': '@c543705b414a91e1099370bbda1888e4', 'HideInputBarFlag': 0, 'City': '', 'StarFriend': 0, 'RemarkPYQuanPin': '', 'ContactFlag': 0, 'AttrStatus': 38207749, 'PYQuanPin': 'Wilson', 'Statues': 0, 'NickName': 'Wilson', 'Uin': 0, 'OwnerUin': 0, 'ChatRoomId': 0, 'Signature': '每天都是新的开始。', 'IsOwner': 0, 'Alias': '', 'UserName': '@fa8fe8fdca294b74c594bcd25d1008b5cbb609876adcecab91dda43897215a71', 'SnsFlag': 1, 'Province': '', 'UniFriend': 0, 'RemarkPYInitial': '', 'HeadImgUrl': '/cgi-bin/mmwebwx-bin/webwxgeticon?seq=0&username=@fa8fe8fdca294b74c594bcd25d1008b5cbb609876adcecab91dda43897215a71&chatroomid=@c543705b414a91e1099370bbda1888e4&skey=', 'MemberCount': 0, 'DisplayName': '', 'PYInitial': 'WILSON', 'MemberList': <ContactList: []>}>]
+
+>
+
+}
+
+
+
+
+
+
+{'Sex': 1, 'VerifyFlag': 0, 'RemarkName': '', 'AppAccountFlag': 0, 'KeyWord': '', 'EncryChatRoomId': '@c543705b414a91e1099370bbda1888e4', 'HideInputBarFlag': 0, 'City': '', 'StarFriend': 0, 'RemarkPYQuanPin': '', 'ContactFlag': 3, 'AttrStatus': 495653, 'PYQuanPin': '0821180410', 'Statues': 0, 'NickName': '0821180410', 'Uin': 0, 'OwnerUin': 0, 'ChatRoomId': 0, 'Signature': '5199140538', 'IsOwner': 0, 'Alias': '', 'UserName': '@56f5d8d2ec2b28afc4702ae87c91656239c7837d39fab544d9aced6e02fcc949', 'SnsFlag': 0, 'Province': '', 'UniFriend': 0, 'RemarkPYInitial': '', 'HeadImgUrl': '/cgi-bin/mmwebwx-bin/webwxgeticon?seq=666383784&username=@56f5d8d2ec2b28afc4702ae87c91656239c7837d39fab544d9aced6e02fcc949&skey=', 'MemberCount': 0, 'DisplayName': '', 'PYInitial': '0821180410', 'MemberList': <ContactList: []>}
+
