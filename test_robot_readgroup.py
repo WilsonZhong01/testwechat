@@ -25,8 +25,8 @@ for group in GroupInfo:
         jsonMem = json.dumps(member)
         # logger.debug(jsonMem)
         # query = "INSERT INTO group_member_info(member_num, group_name, member_info) VALUES(%s, %s, %s)"
-        query_member = "INSERT INTO member_info(user_name, nick_name, province,city, keyword,headimgurl,snsflag, sex, isowner, pyinitial, attrstatus, group_subsidiary) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
-        cur.execute(query_member,(member['UserName'], member['NickName'], member['Province'],member['City'], member['KeyWord'], member['HeadImgUrl'], member['SnsFlag'],member['Sex'], member['IsOwner'], member['PYInitial'], member['AttrStatus'],group['NickName']))
+        query_member = "INSERT INTO member_info(user_name, nick_name, province,city, keyword,headimgurl,snsflag, sex, pyinitial, attrstatus) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+        cur.execute(query_member,(member['UserName'], member['NickName'], member['Province'],member['City'], member['KeyWord'], member['HeadImgUrl'], member['SnsFlag'],member['Sex'], member['PYInitial'], member['AttrStatus']))
         # cur.execute(query,(detailedChatroom['MemberCount'], detailedChatroom['NickName'],jsonMem))
         # pdb.set_trace()
 # pdb.set_trace()
