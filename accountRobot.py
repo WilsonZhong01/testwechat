@@ -145,7 +145,8 @@ if __name__ == "__main__":
             else:
                 try:
                     loginCode = int(msgText)
-                    loginId = auth.login(loginCode, alias)
+                    nick_name = msg.User.NickName
+                    loginId = auth.login(loginCode, alias, nick_name)
                     if loginId:
                         msg.user.send("验证成功， 登录 http://console.masterqun.com/client/directLogin/{}/{}/".format(loginCode, loginId))
                         logger.error("login ok code: {} text: {}".format(loginCode, msgText))
@@ -175,9 +176,6 @@ if __name__ == "__main__":
 
         robot.logMessage(fromUser, jsonMsg, msgType, 'others', robotId)
 
-
-        #newInstance.send('Hello, filehelper', toUserName='filehelper')
-        #msg.user.send('%s: %s' % (msg.type, msg.text))
 
 
     @newInstance.msg_register([SYSTEM])
@@ -211,33 +209,30 @@ if __name__ == "__main__":
         '''
 
 
-
-
-    @newInstance.msg_register([TEXT, SHARING], isGroupChat=True)
-    def text_reply(msg):
-        # logger.debug(msg)
-        # msgContent = msg['Text']
+    @newInstance.msg_register([TEXT, SHARING, MAP, PICTURE], isGroupChat=True)
+    def group_text(msg):
         global MsgContent
-        # jsonMsg = json.dumps(msg)
+        # which group message in
+        chatRoom_id = msg['User']['NickName']
         # logger.debug(msg)
-        fromUser = msg.FromUserName
-        msgType = msg.MsgType
+        # id of sender
+        currentUserName = msg['ActualNickName']
+        logger.debug(msg['User']['MemberList'])
+        logger.debug(msg)
+        # save message into database according to their types
         if msg['Type'] == TEXT:
             MsgContent = msg['Content']
-
+            # logger.debug(MsgContent)
         elif msg['Type'] == SHARING:
             MsgContent = msg['Text']
-            
-        logger.debug(MsgContent)
-        jsonMsg = json.dumps(MsgContent)
-        robot.logMessage(fromUser, jsonMsg, msgType, 'group', robotId)
-        '''
+            # logger.debug(MsgContent)
+        elif (msg['Type'] != SHARING or msg['Type'] != TEXT):
+            MsgContent = '1'
 
-        if msg.isAt:
-            msg.user.send(u'@%s\u2005I received: %s' % (
-                msg.actualNickName, msg.text))
-
-        '''
+        connection = mysql_pool.connection()
+        cur = connection.cursor()
+        query = "INSERT INTO group_chat_content(group_id, user_nickname, content, content_type, time) VALUES(%s, %s, %s, %s, UNIX_TIMESTAMP())"
+        cur.execute(query, (chatRoom_id, currentUserName, MsgContent, msg['Type']))
 
 
     newInstance.auto_login(enableCmdQR=settings.enableCmdQR, hotReload=True, statusStorageDir=storageFile,
