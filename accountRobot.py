@@ -217,8 +217,10 @@ if __name__ == "__main__":
         # logger.debug(msg)
         # id of sender
         currentUserName = msg['ActualNickName']
-        logger.debug(msg['User']['MemberList'])
-        logger.debug(msg)
+
+        friend = Friend(newInstance)
+        member_alias = friend.addFriendFromMsg(robotId, msg)
+        # logger.debug(alias)
         # save message into database according to their types
         if msg['Type'] == TEXT:
             MsgContent = msg['Content']
@@ -231,8 +233,8 @@ if __name__ == "__main__":
 
         connection = mysql_pool.connection()
         cur = connection.cursor()
-        query = "INSERT INTO group_chat_content(group_id, user_nickname, content, content_type, time) VALUES(%s, %s, %s, %s, UNIX_TIMESTAMP())"
-        cur.execute(query, (chatRoom_id, currentUserName, MsgContent, msg['Type']))
+        query = "INSERT INTO group_chat_content(group_id, user_nickname, content, member_id, content_type, time) VALUES(%s, %s, %s, %s, %s, UNIX_TIMESTAMP())"
+        cur.execute(query, (chatRoom_id, currentUserName, MsgContent, member_alias, msg['Type']))
 
 
     newInstance.auto_login(enableCmdQR=settings.enableCmdQR, hotReload=True, statusStorageDir=storageFile,
